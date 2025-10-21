@@ -11,7 +11,7 @@ Os arquivos aqui foram organizados para representar o fluxo completo: desde a le
 Código desenvolvido para o **microcontrolador ESP32**, responsável por:
 - Ler o sinal analógico via **ADC**;
 - Realizar o envio serial dos dados em tempo real;
-- Implementar temporização estável e tratamento de buffer;
+- Implementar temporização estável;
 - Facilitar a depuração por meio de mensagens e logs.
 
 Esse código é o ponto de partida da captura dos sinais físicos.
@@ -22,7 +22,7 @@ Esse código é o ponto de partida da captura dos sinais físicos.
 Script Python responsável por:
 - Ler os dados recebidos via **porta serial**;
 - Salvar as amostras em um **arquivo .csv** para posterior análise;
-- Permitir a escolha dinâmica da porta e taxa de amostragem;
+- Permitir a escolha dinâmica da porta e tempo de captura;
 - Exibir informações básicas sobre o fluxo de dados durante a aquisição.
 
 Esse arquivo faz a ponte entre o microcontrolador e o ambiente de análise.
